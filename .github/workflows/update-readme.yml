@@ -14,24 +14,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: sudo apt update && sudo apt install -y fonts-dejavu-core imagemagick nodejs npm
+      - name: Create 'generated' directory
+        run: mkdir -p generated
 
-      - name: Clone GitHub Readme Stats
-        run: git clone https://github.com/anuraghazra/github-readme-stats.git
-        
-      - name: Generate GitHub Stats
-        run: |
-          cd github-readme-stats
-          npm install
-          node api/index.js --username=GodOfZap --output=../generated/stats.svg --theme=dark
+      - name: Fetch GitHub Stats
+        run: curl -o generated/stats.svg "https://github-readme-stats.vercel.app/api?username=GodOfZap&show_icons=true&theme=transparent"
 
-      - name: Generate Streak Stats
-        run: |
-          git clone https://github.com/DenverCoder1/github-readme-streak-stats.git
-          cd github-readme-streak-stats
-          npm install
-          node api/index.js --user=GodOfZap --output=../generated/streak.svg --theme=dark
+      - name: Fetch Streak Stats
+        run: curl -o generated/streak.svg "https://streak-stats.demolab.com?user=GodOfZap&theme=transparent"
 
       - name: Commit and push changes
         env:
