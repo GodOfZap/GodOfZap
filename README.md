@@ -18,6 +18,6 @@ Here are some ideas to get you started:
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
 </p>
 
-<p align="center">
+<!--<p align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
 </p>
