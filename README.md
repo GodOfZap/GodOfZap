@@ -15,11 +15,9 @@ Here are some ideas to get you started:
 <h1 align="center">Hi there 👋 </h1>
 
 <p align="center">
-  <!-- GitHub Stats -->
-  ![GitHub Stats](https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg)
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
 </p>
 
 <p align="center">
-  <!-- Streak Stats -->
-  ![Streak Stats](https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg)
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
 </p>
