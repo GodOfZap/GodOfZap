@@ -1,6 +1,4 @@
-## Hi there 👋
-
-<!--
+<!--  
 **GodOfZap/GodOfZap** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -14,3 +12,14 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<h1 align="center">Hi there 👋 </h1>
+
+<p align="center">
+  <!-- GitHub Stats -->
+  ![GitHub Stats](https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg)
+</p>
+
+<p align="center">
+  <!-- Streak Stats -->
+  ![Streak Stats](https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg)
+</p>
