@@ -23,6 +23,9 @@ jobs:
       - name: Fetch Streak Stats
         run: curl -o generated/streak.svg "https://streak-stats.demolab.com?user=GodOfZap&theme=transparent"
 
+      - name: Fetch Most Used Languages
+        run: curl -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
+
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
