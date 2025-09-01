@@ -37,7 +37,7 @@ Here are some ideas to get you started:
 ### 🧬 Tech Stack
 
 <p align="center">
-  <img src="https://github.com/GodOfZap/GodOfZap/blob/main/generated/languages.svg" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/languages.svg" />
 </p>
 
 ---
@@ -45,7 +45,7 @@ Here are some ideas to get you started:
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github.com/GodOfZap/GodOfZap/blob/main/generated/metrics.svg" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
 </p>
 
 ---
