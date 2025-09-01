@@ -18,38 +18,23 @@ Here are some ideas to get you started:
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
 </p>
 -->
+
 <h1 align="center">⚡ GodOfZap ⚡</h1>
 
 <p align="center">
   <code>Code. Create. Zap.</code>
 </p>
 
-<p align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
-</p>
-
-<p align="center">
   <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
-</p>
+</div>
 
 ---
 
-### 🧬 Tech Stack
+### 🧬 Tech Stack & 📊 GitHub Stats
 
-<p align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/languages.svg" />
-</p>
-
----
-
-### 📊 GitHub Stats
-
-<p align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
-</p>
-
----
-
-### 🌀 Philosophy
-
-> “Minimalism is not lack of design. It’s the essence of it.”
+</div>
