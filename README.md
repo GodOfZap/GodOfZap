@@ -27,7 +27,6 @@ Here are some ideas to get you started:
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
-  <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
 </div>
 
 ---
@@ -38,3 +37,7 @@ Here are some ideas to get you started:
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/languages.svg" />
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
 </div>
+
+---
+
+<img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
