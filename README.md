@@ -40,4 +40,9 @@ Here are some ideas to get you started:
 
 ---
 
+### Trophy
+
+  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=onedark&row=1&column=6" />
+
+---
 <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
