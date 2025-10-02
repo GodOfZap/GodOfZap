@@ -46,3 +46,7 @@ Here are some ideas to get you started:
 
 ---
 <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
+
+---
+📫 Support: t41L@proton.me
+
