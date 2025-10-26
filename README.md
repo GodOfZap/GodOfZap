@@ -42,11 +42,9 @@ Here are some ideas to get you started:
 
 ### Trophy
 
-**Trophies from GitHub Profile Trophy:**
 
 ![Trophies from GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=GodOfZap)
 
-**Fallback (if the above doesn't load):**
 
 ![Trophies from GitHub Trophies](https://github-trophies.vercel.app/?username=GodOfZap)
 
