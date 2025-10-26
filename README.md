@@ -42,7 +42,13 @@ Here are some ideas to get you started:
 
 ### Trophy
 
-  <img src="https://github-profile-trophy.vercel.app/?username=GodOfZap&theme=onedark&row=1&column=6" />
+**Trophies from GitHub Profile Trophy:**
+
+![Trophies from GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=GodOfZap)
+
+**Fallback (if the above doesn't load):**
+
+![Trophies from GitHub Trophies](https://github-trophies.vercel.app/?username=GodOfZap)
 
 ---
 <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
