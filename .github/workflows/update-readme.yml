@@ -1,4 +1,4 @@
-name: Update GitHub Profile README
+name: Update GitHub Profile README and Trophy Badge
 
 on:
   schedule:
@@ -14,6 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Part 1: Generate GitHub Stats SVGs
       - name: Create 'generated' directory
         run: mkdir -p generated
 
@@ -26,12 +27,52 @@ jobs:
       - name: Fetch Most Used Languages
         run: curl -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
 
-      - name: Commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Part 2: Determine available trophy image
+      - name: Check trophy image availability
+        id: check_trophy
         run: |
+          TROPHY1_URL="https://github-profile-trophy.vercel.app/?username=GodOfZap"
+          TROPHY2_URL="https://github-trophies.vercel.app/?username=GodOfZap"
+          
+          if curl --head --silent --fail "$TROPHY1_URL" > /dev/null; then
+            echo "TROPHY_URL=$TROPHY1_URL" >> $GITHUB_OUTPUT
+            echo "Selected Trophy: GitHub Profile Trophy"
+          elif curl --head --silent --fail "$TROPHY2_URL" > /dev/null; then
+            echo "TROPHY_URL=$TROPHY2_URL" >> $GITHUB_OUTPUT
+            echo "Selected Trophy: Alternative Trophy"
+          else
+            echo "TROPHY_URL=" >> $GITHUB_OUTPUT
+            echo "No trophy images available."
+          fi
+
+      # Part 3: Generate badge markdown for the trophy
+      - name: Create trophy badge markdown
+        if: steps.check_trophy.outputs.TROPHY_URL != ''
+        id: badge
+        run: |
+          echo "::set-output name=result::![Trophy](${ { steps.check_trophy.outputs.TROPHY_URL } })"
+
+      # Part 4: Update README with stats and trophy badge
+      - name: Update README with stats and trophy
+        run: |
+          README_FILE="README.md"
+
+          # Ensure your README contains placeholders:
+          # <!-- STATS -->
+          # <!-- TROPHY_BADGE -->
+          
+          # Replace stats placeholder with generated SVGs
+          sed -i "s|<!-- STATS -->|\
+![Stats](generated/stats.svg) ![Streak](generated/streak.svg) ![Languages](generated/languages.svg)|" "$README_FILE"
+
+          # Replace trophy badge placeholder
+          if [ -n "${{ steps.check_trophy.outputs.TROPHY_URL }}" ]; then
+            sed -i "s|<!-- TROPHY_BADGE -->|${{ steps.badge.outputs.result }}|" "$README_FILE"
+          fi
+
+          # Commit and push changes
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add generated/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Updated GitHub stats"
+          git add "$README_FILE" generated/
+          git diff --quiet || git commit -m "Update stats and trophy badge"
           git push
