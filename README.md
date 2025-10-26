@@ -49,5 +49,12 @@ Here are some ideas to get you started:
 ![Trophies from GitHub Trophies](https://github-trophies.vercel.app/?username=GodOfZap)
 
 ---
+### My Stats
+
+<!-- STATS -->
+
+### Trophy
+
+<!-- TROPHY_BADGE -->
 <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
 
