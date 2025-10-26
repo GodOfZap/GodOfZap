@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write  # Required for committing changes
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,12 +27,31 @@ jobs:
       - name: Fetch Most Used Languages
         run: curl -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
 
+      - name: Check Trophy Availability
+        run: |
+          if curl --silent --fail "https://github-profile-trophy.vercel.app/?username=GodOfZap" > /dev/null; then
+            echo "SHOW_TROPHY=profile" >> $GITHUB_ENV
+          elif curl --silent --fail "https://github-trophies.vercel.app/?username=GodOfZap" > /dev/null; then
+            echo "SHOW_TROPHY=trophies" >> $GITHUB_ENV
+          else
+            echo "SHOW_TROPHY=none" >> $GITHUB_ENV
+
+      - name: Update README with selected trophy
+        run: |
+          cp README.md README.md.bak
+          if [ "$SHOW_TROPHY" = "profile" ]; then
+            sed -i '/### Trophy/,/<!-- TROPHY END -->/c\### Trophy\n\n![Trophies from GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=GodOfZap)\n\n<!-- TROPHY END -->' README.md
+          elif [ "$SHOW_TROPHY" = "trophies" ]; then
+            sed -i '/### Trophy/,/<!-- TROPHY END -->/c\### Trophy\n\n![Trophies from GitHub Trophies](https://github-trophies.vercel.app/?username=GodOfZap)\n\n<!-- TROPHY END -->' README.md
+          else
+            sed -i '/### Trophy/,/<!-- TROPHY END -->/c\### Trophy\n\n<!-- TROPHY END -->' README.md
+
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add generated/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Updated GitHub stats"
+          git add README.md generated/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Updated GitHub stats and trophy section"
           git push
