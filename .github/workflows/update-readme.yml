@@ -21,7 +21,7 @@ jobs:
         run: curl -o generated/stats.svg "https://github-readme-stats.vercel.app/api?username=godofzap&theme=transparent&show_icons=true&hide_border=true&count_private=true"
 
       - name: Fetch Streak Stats
-        run: curl -o generated/streak.svg "https://streak-stats.demolab.com?user=GodOfZap&theme=transparent"
+        run: curl -o generated/streak.svg "https://streak-stats.demolab.com?user=GodOfZap"
 
       - name: Fetch Most Used Languages
         run: curl -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
