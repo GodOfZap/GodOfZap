@@ -28,10 +28,10 @@ jobs:
       - name: Fetch Languages
         run: curl -s -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
 
-      # Detect most recent + starred repo
+      # Fetch Most Recent + Most Starred Repo
       - name: Fetch Repo Metadata
         run: |
-          RECENT=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=updated&direction=desc" \
+          RECENT=$(curl -s "https://api.github.com/users/GodOfZap/repos?per_page=100&sort=updated&direction=desc" \
             | jq -r '.[0].name')
 
           STAR=$(curl -s "https://api.github.com/users/GodOfZap/repos?per_page=100" \
@@ -40,13 +40,13 @@ jobs:
           echo "RECENT_REPO=$RECENT" >> $GITHUB_ENV
           echo "STAR_REPO=$STAR" >> $GITHUB_ENV
 
-      # Replace placeholders inside README
-      - name: Update README with repo names
+      # Replace placeholders
+      - name: Update README
         run: |
-          sed -i "s|{{RECENT_REPO}}|${RECENT_REPO}|g" README.md
-          sed -i "s|{{STAR_REPO}}|${STAR_REPO}|g" README.md
+          sed -i "s/{{RECENT_REPO}}/${RECENT_REPO}/g" README.md
+          sed -i "s/{{STAR_REPO}}/${STAR_REPO}/g" README.md
 
-      # Commit and push changes
+      # Commit changes
       - name: Commit changes
         run: |
           git config --global user.name "github-actions[bot]"
