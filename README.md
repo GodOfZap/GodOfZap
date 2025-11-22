@@ -49,7 +49,7 @@
 
 ## 📦 Most Recently Updated Repo (Auto)
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=GodOfZap&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=IS&theme=tokyonight" />
 </p>
 
 ---
