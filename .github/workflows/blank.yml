@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # REQUIRED for commit + push
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
 
       - name: Generate 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@main
-        with:
-          username: GodOfZap
-          token: ${{ secrets.GH_PAT }}   # your PAT is fine
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: GodOfZap
 
       - name: Commit & Push
         run: |
