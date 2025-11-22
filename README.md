@@ -49,14 +49,14 @@
 
 ## 📦 Most Recently Updated Repo (Auto)
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=$(jq -r '.recent' generated/repo.json)&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo={{RECENT_REPO}}&theme=tokyonight" />
 </p>
 
 ---
 
 ## ⭐ Most Starred Repo (Auto)
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=$(jq -r '.starred' generated/repo.json)&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo={{STAR_REPO}}&theme=tokyonight" />
 </p>
 
 ---
