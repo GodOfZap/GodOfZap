@@ -6,9 +6,6 @@
        height="200" />
 </p>
 
-
-
-
 ---
 
 ## 🚀 About Me
@@ -27,11 +24,11 @@
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats (Auto-updated)
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=GodOfZap&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=GodOfZap&theme=tokyonight" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=tokyonight" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/languages.svg" />
 </div>
 
 ---
@@ -43,10 +40,36 @@
 
 ---
 
+## 📅 3D Daily Contribution Graph
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ashutosh00710/github-readme-3d-contrib/main/docs/demo.gif" width="100%" />
+</p>
+
+---
+
+## 📦 Most Recently Updated Repo (Auto)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=$(jq -r '.recent' generated/repo.json)&theme=tokyonight" />
+</p>
+
+---
+
+## ⭐ Most Starred Repo (Auto)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=$(jq -r '.starred' generated/repo.json)&theme=tokyonight" />
+</p>
+
+---
+
 ## 🌐 Connect With Me
 <p align="center">
-  <a href="https://github.com/GodOfZap"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://niteeshsr.vercel.app"><img src="https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white"/></a>
+  <a href="https://github.com/GodOfZap">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  
+  <a href="https://niteeshsr.vercel.app">
+    <img src="https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white"/>
+  </a>
 </p>
 
 ---
@@ -54,4 +77,3 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
 </p>
-
