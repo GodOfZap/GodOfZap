@@ -3,22 +3,26 @@ name: Update GitHub Profile README
 on:
   schedule:
     - cron: "0 0 * * *"  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Required for committing changes
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create 'generated' directory
+      - name: Create generated directory
         run: mkdir -p generated
 
+      # -------------------------
+      # Fetch GitHub visual stats
+      # -------------------------
       - name: Fetch GitHub Stats
-        run: curl -o generated/stats.svg "https://github-readme-stats.vercel.app/api?username=godofzap&theme=transparent&show_icons=true&hide_border=true&count_private=true"
+        run: curl -o generated/stats.svg "https://github-readme-stats.vercel.app/api?username=GodOfZap&theme=transparent&show_icons=true&hide_border=true&count_private=true"
 
       - name: Fetch Streak Stats
         run: curl -o generated/streak.svg "https://streak-stats.demolab.com/?user=GodOfZap&hide_border=true"
@@ -26,6 +30,19 @@ jobs:
       - name: Fetch Most Used Languages
         run: curl -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
 
+      # ----------------------------------------
+      # Detect Most Recent Repo + Most Starred Repo
+      # ----------------------------------------
+      - name: Fetch Repo Metadata
+        run: |
+          RECENT_REPO=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=updated&direction=desc" | jq -r '.[0].name')
+          STAR_REPO=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=stars&direction=desc" | jq -r '.[0].name')
+
+          echo "{ \"recent\": \"$RECENT_REPO\", \"starred\": \"$STAR_REPO\" }" > generated/repo.json
+
+      # -------------------------
+      # Commit changes
+      # -------------------------
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,5 +50,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add generated/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Updated GitHub stats"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Updated GitHub stats + repositories"
           git push
