@@ -31,10 +31,13 @@ jobs:
       # Detect most recent + starred repo
       - name: Fetch Repo Metadata
         run: |
-          RECENT=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=updated" | jq -r '.[0].name')
-          STAR=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=stars" | jq -r '.[0].name')
+          RECENT=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=updated&direction=desc" \ | jq -r '.[0].name')
+
+          STAR=$(curl -s "https://api.github.com/users/GodOfZap/repos?per_page=100" \ | jq -r 'max_by(.stargazers_count) | .name')
+
           echo "RECENT_REPO=$RECENT" >> $GITHUB_ENV
           echo "STAR_REPO=$STAR" >> $GITHUB_ENV
+
 
       # Replace placeholders inside README
       - name: Update README with repo names
