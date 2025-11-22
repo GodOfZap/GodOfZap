@@ -1,11 +1,13 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=200&section=header&text=⚡%20GodOfZap%20⚡&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/svgviewer-output.svg?sanitize=true" 
+       alt="Abstract Banner" 
+       width="100%" 
+       height="200" />
 </p>
 
-<p align="center">
-  <em>Code. Create. Zap.</em>
-</p>
+
+
 
 ---
 
@@ -53,6 +55,3 @@
   <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
 </p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0072ff,100:00c6ff&height=120&section=footer"/>
-</p>
