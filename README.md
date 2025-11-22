@@ -42,21 +42,21 @@
 
 ## 📅 3D Daily Contribution Graph
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ashutosh00710/github-readme-3d-contrib/main/docs/demo.gif" width="100%" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/profile-3d-contrib/profile-green.svg" width="100%" />
 </p>
 
 ---
 
 ## 📦 Most Recently Updated Repo (Auto)
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=GodOfZap&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo={{RECENT_REPO}}&theme=tokyonight" />
 </p>
 
 ---
 
 ## ⭐ Most Starred Repo (Auto)
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=IS&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo={{STAR_REPO}}&theme=tokyonight" />
 </p>
 
 ---
