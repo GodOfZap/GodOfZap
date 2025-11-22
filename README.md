@@ -1,54 +1,58 @@
-<!--  
-**GodOfZap/GodOfZap** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
--
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-<h1 align="center">Hi there 👋 </h1>
-
-<p align="left">
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
+<!-- Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=200&section=header&text=⚡%20GodOfZap%20⚡&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
 </p>
--->
-
-<h1 align="center">⚡ GodOfZap ⚡</h1>
 
 <p align="center">
-  <code>Code. Create. Zap.</code>
+  <em>Code. Create. Zap.</em>
 </p>
 
+---
+
+## 🚀 About Me
+- 🔭 Working on **open-source automation & AI projects**
+- 🌱 Exploring **machine learning**
+- 👯 Open to **collaborations on creative tech ideas**
+- 💬 Ask me about **JavaScript, Python, APIs and DevOps**
+- ⚡ Fun fact: I debug faster with music 🎧
+
+---
+
+## 🧬 Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,python,react,nodejs,express,html,css,git,github,docker,linux,vscode" />
+</p>
+
+---
+
+## 📊 GitHub Stats
 <div align="center">
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
+  <img src="https://github-readme-stats.vercel.app/api?username=GodOfZap&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=GodOfZap&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=tokyonight" />
 </div>
 
 ---
 
-### 🧬 Tech Stack & 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/languages.svg" />
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
-</div>
+## 🏆 Achievements
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=GodOfZap&theme=radical&no-frame=true&margin-w=15" />
+</p>
 
 ---
 
-### Trophy
-
-
-<!--  
-![Trophies from GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=GodOfZap)
--->
-
-![Trophies from GitHub Trophies](https://github-trophies.vercel.app/?username=GodOfZap)
+## 🌐 Connect With Me
+<p align="center">
+  <a href="https://github.com/GodOfZap"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://niteeshsr.vercel.app"><img src="https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white"/></a>
+</p>
 
 ---
 
-<img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=GodOfZap&label=Visitors&color=blue&style=flat-square" />
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0072ff,100:00c6ff&height=120&section=footer"/>
+</p>
