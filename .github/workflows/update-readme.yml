@@ -20,35 +20,34 @@ jobs:
 
       # Fetch SVG stats
       - name: Fetch GitHub Stats
-        run: curl -o generated/stats.svg "https://github-readme-stats.vercel.app/api?username=GodOfZap&theme=transparent&show_icons=true&hide_border=true&count_private=true"
+        run: curl -s -o generated/stats.svg "https://github-readme-stats.vercel.app/api?username=GodOfZap&theme=transparent&show_icons=true&hide_border=true&count_private=true"
 
       - name: Fetch Streak Stats
-        run: curl -o generated/streak.svg "https://streak-stats.demolab.com/?user=GodOfZap&hide_border=true"
+        run: curl -s -o generated/streak.svg "https://streak-stats.demolab.com?user=GodOfZap&hide_border=true"
 
       - name: Fetch Languages
-        run: curl -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
+        run: curl -s -o generated/languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=GodOfZap&layout=compact&theme=transparent"
 
       # Detect most recent + starred repo
       - name: Fetch Repo Metadata
         run: |
-          RECENT=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=updated&direction=desc" \ | jq -r '.[0].name')
+          RECENT=$(curl -s "https://api.github.com/users/GodOfZap/repos?sort=updated&direction=desc" \
+            | jq -r '.[0].name')
 
-          STAR=$(curl -s "https://api.github.com/users/GodOfZap/repos?per_page=100" \ | jq -r 'max_by(.stargazers_count) | .name')
+          STAR=$(curl -s "https://api.github.com/users/GodOfZap/repos?per_page=100" \
+            | jq -r 'max_by(.stargazers_count) | .name')
 
           echo "RECENT_REPO=$RECENT" >> $GITHUB_ENV
           echo "STAR_REPO=$STAR" >> $GITHUB_ENV
 
-
       # Replace placeholders inside README
       - name: Update README with repo names
         run: |
-          sed -i "s/{{RECENT_REPO}}/${RECENT_REPO}/g" README.md
-          sed -i "s/{{STAR_REPO}}/${STAR_REPO}/g" README.md
+          sed -i "s|{{RECENT_REPO}}|${RECENT_REPO}|g" README.md
+          sed -i "s|{{STAR_REPO}}|${STAR_REPO}|g" README.md
 
       # Commit and push changes
       - name: Commit changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
