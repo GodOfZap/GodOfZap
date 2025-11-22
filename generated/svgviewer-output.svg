@@ -1,112 +1,83 @@
-<p align="center">
 <svg viewBox="0 0 1200 300" width="100%" height="200"
-     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GodOfZap logo">
+     xmlns="http://www.w3.org/2000/svg">
+
   <defs>
-    <!-- Animated gradient for text and bolt -->
     <linearGradient id="gZap" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00E5FF">
-        <animate attributeName="stop-color" values="#00E5FF;#7C4DFF;#FF1E56;#00E5FF" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#00E5FF;#7C4DFF;#FF1E56;#00E5FF" dur="6s" repeatCount="indefinite"/>
       </stop>
       <stop offset="50%" stop-color="#7C4DFF">
-        <animate attributeName="stop-color" values="#7C4DFF;#FF1E56;#00F5A0;#7C4DFF" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#7C4DFF;#FF1E56;#00F5A0;#7C4DFF" dur="6s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#FF1E56">
-        <animate attributeName="stop-color" values="#FF1E56;#00F5A0;#00E5FF;#FF1E56" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#FF1E56;#00F5A0;#00E5FF;#FF1E56" dur="6s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <!-- Secondary subtle gradient for background -->
     <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#05060a"/>
-      <stop offset="100%" stop-color="#0b0f1a"/>
+      <stop offset="0%" stop-color="#05060A"/>
+      <stop offset="100%" stop-color="#0B0F1A"/>
     </linearGradient>
 
-    <!-- Hex grid pattern -->
     <pattern id="hex" width="48" height="40" patternUnits="userSpaceOnUse">
       <path d="M24 0 L42 12 L42 28 L24 40 L6 28 L6 12 Z"
             fill="none" stroke="url(#gZap)" stroke-width="1" stroke-opacity="0.08"/>
     </pattern>
-
-    <!-- Glow filter for neon effect -->
-    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Small spark filter -->
-    <filter id="spark" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.9 0"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <!-- Lightning bolt shape as a symbol -->
-    <symbol id="bolt" viewBox="0 0 100 150" preserveAspectRatio="xMidYMid meet">
-      <path id="boltMain" d="M40 0 L85 60 L60 60 L80 150 L30 80 L55 80 Z"
-            fill="url(#gZap)" filter="url(#neon)"/>
-      <path d="M48 14 L72 56 L57 56 L74 126 L36 76 L53 76 Z"
-            fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="2"/>
-    </symbol>
-
-    <!-- Flicker animation for bolt -->
-    <animate href="#boltMain" attributeName="opacity"
-             values="1;0.85;1;0.9;1" dur="1.6s" repeatCount="indefinite"/>
   </defs>
 
-  <!-- background -->
+  <!-- Background -->
   <rect width="1200" height="300" fill="url(#bgGrad)"/>
-  <rect width="1200" height="300" fill="url(#hex)" opacity="0.65"/>
+  <rect width="1200" height="300" fill="url(#hex)" opacity="0.55"/>
 
-  <!-- left emblem block -->
+  <!-- Emblem (flattened bolt) -->
   <g transform="translate(80,40)">
-    <circle r="90" transform="translate(120,110)" fill="rgba(255,255,255,0.02)"/>
-    <circle r="82" transform="translate(120,110)" fill="none" stroke="url(#gZap)" stroke-width="2" opacity="0.9" filter="url(#spark)"/>
-    <use href="#bolt" x="90" y="40" width="110" height="165"/>
-    <g transform="translate(120,110)">
-      <circle r="48" fill="none" stroke="url(#gZap)" stroke-width="1.5" stroke-opacity="0.25">
-        <animate attributeName="r" values="44;48;44" dur="4s" repeatCount="indefinite"/>
-        <animate attributeName="stroke-opacity" values="0.15;0.30;0.15" dur="4s" repeatCount="indefinite"/>
-      </circle>
-    </g>
+    <circle cx="120" cy="110" r="90" fill="rgba(255,255,255,0.03)"/>
+    <circle cx="120" cy="110" r="82" fill="none" stroke="url(#gZap)" stroke-width="2"/>
+
+    <!-- Lightning bolt -->
+    <path d="M130 40 L175 100 L150 100 L170 190 L120 120 L145 120 Z"
+          fill="url(#gZap)">
+      <animate attributeName="opacity" values="1;0.85;1;0.9;1" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Pulse ring -->
+    <circle cx="120" cy="110" r="48" fill="none" stroke="url(#gZap)" stroke-width="1.5" stroke-opacity="0.25">
+      <animate attributeName="r" values="44;48;44" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.15;0.35;0.15" dur="3s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- Title and tagline -->
+  <!-- TEXT -->
   <g transform="translate(320,120)">
-    <text x="0" y="-10" font-family="Segoe UI, Inter, system-ui, -apple-system, sans-serif"
-          font-weight="800" font-size="64" fill="url(#gZap)" filter="url(#neon)" letter-spacing="-1">
+    <text x="0" y="-10"
+          font-family="Segoe UI, Inter, sans-serif"
+          font-weight="800" font-size="64"
+          fill="url(#gZap)">
       GodOfZap
     </text>
-    <text x="2" y="34" font-family="Segoe UI, Inter, system-ui, -apple-system, sans-serif"
-          font-weight="600" font-size="18" fill="#BFC8D9" opacity="0.9">
+
+    <text x="2" y="34"
+          font-family="Segoe UI, Inter, sans-serif"
+          font-weight="600" font-size="18"
+          fill="#BFC8D9" opacity="0.9">
       Code. Create. Zap.
     </text>
-    <rect x="0" y="44" width="420" height="1" fill="rgba(255,255,255,0.04)"/>
+
+    <rect x="0" y="44" width="420" height="1" fill="rgba(255,255,255,0.05)"/>
   </g>
 
-  <!-- animated electric trail across bottom -->
+  <!-- Electric trail -->
   <g transform="translate(0,220)">
-    <path id="trail" d="M -200 10 C 150 0 350 30 600 10 C 850 -10 1050 30 1400 10"
-          fill="none" stroke="url(#gZap)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
-    <use href="#trail">
-      <animate attributeName="stroke-dashoffset" from="0" to="-600" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.35;0.8;0.35" dur="6s" repeatCount="indefinite"/>
-    </use>
+    <path id="trail" 
+          d="M -200 10 C 150 0 350 30 600 10 C 850 -10 1050 30 1400 10"
+          fill="none" stroke="url(#gZap)"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          stroke-dasharray="20 40" opacity="0.7">
+      <animate attributeName="stroke-dashoffset"
+               from="0" to="-600" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values="0.2;0.55;0.2" dur="4s" repeatCount="indefinite"/>
+    </path>
   </g>
 
-  <!-- small decorative bolts top-right -->
-  <g transform="translate(980,28)" opacity="0.9">
-    <use href="#bolt" width="60" height="90" transform="scale(0.6) translate(-40,0)">
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3.2s" repeatCount="indefinite"/>
-    </use>
-    <use href="#bolt" width="36" height="54" transform="translate(36,30) scale(0.36)">
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,4;0,0" dur="2.6s" repeatCount="indefinite"/>
-    </use>
-  </g>
-
-  <title>GodOfZap — lightning logo and neon text</title>
-  <desc>Brand mark with animated lightning bolt, neon gradient text reading "GodOfZap" and tagline "Code. Create. Zap."</desc>
 </svg>
-</p>
