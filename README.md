@@ -1,9 +1,7 @@
 <!-- Banner -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/svgviewer-output.svg?sanitize=true" 
-       alt="Abstract Banner" 
-       width="100%" 
-       height="200" />
+       alt="Abstract Banner" width="100%" height="200" />
 </p>
 
 ---
@@ -47,16 +45,16 @@
 
 ---
 
-## 📦 Most Recently Updated Repo (Auto)
+## 📦 Most Recently Updated Repo  
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=GodOfZap&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo={{RECENT_REPO}}&theme=tokyonight" />
 </p>
 
 ---
 
-## ⭐ Most Starred Repo (Auto)
+## ⭐ Most Starred Repo  
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=IS&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo={{STAR_REPO}}&theme=tokyonight" />
 </p>
 
 ---
