@@ -44,25 +44,17 @@
 
 ---
 
-## 🚀 Highlighted Repositories
+## Most Recently Updated Repo (Auto)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=GodOfZap&theme=tokyonight" />
+</p>
 
-<table align="center">
-<tr>
-<td align="center">
+---
 
-### Most Recently Updated Repo (Auto)
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=GodOfzap&theme=tokyonight" />
-
-</td>
-<td align="center">
-
-### Most Starred Repo (Auto)
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=IS&theme=tokyonight" />
-
-</td>
-</tr>
-</table>
-
+## Most Starred Repo (Auto)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=IS&theme=tokyonight" />
+</p>
 
 ---
 
