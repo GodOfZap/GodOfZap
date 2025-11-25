@@ -1,64 +1,64 @@
 <!-- Banner -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/svgviewer-output.svg?sanitize=true" 
-       alt="Banner" width="100%" height="200" />
+       alt="Abstract Banner" width="100%" height="200" />
 </p>
 
 ---
 
-## 👋 About Me
-- Working on **open-source automation**, **AI tools**, and **developer-focused utilities**  
-- Exploring **machine learning**, **edge AI**, and **systems design**
-- Open to **collaborations on automation, AI, and productivity tools**
-- Ask me about **JavaScript, Python, APIs, DevOps pipelines, automation workflows**
+## About Me
+- Working on **open-source automation & AI projects**
+- Exploring **machine learning**
+- Open to **collaborations on creative tech ideas**
+- Ask me about **JavaScript, Python, APIs, DevOps**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,python,react,nodejs,express,html,css,git,github,docker,linux,vscode,bash" />
+  <img src="https://skillicons.dev/icons?i=js,ts,python,react,nodejs,express,html,css,git,github,docker,linux,vscode" />
 </p>
 
 ---
 
-## 📊 GitHub Stats (Auto-Updated)
+## GitHub Stats (Auto-updated)
 <div align="center">
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" height="180"/>
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" height="180"/>
-  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/languages.svg" height="180"/>
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/stats.svg" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/streak.svg" />
+  <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/generated/languages.svg" />
 </div>
 
 ---
 
-## 🏆 Achievements
+## Achievements
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=GodOfZap&theme=radical&no-frame=true&margin-w=10&row=1" />
+  <img src="https://github-profile-trophy.vercel.app/?username=GodOfZap&theme=radical&no-frame=true&margin-w=15" />
 </p>
 
 ---
 
-## 🟩 3D Contribution Graph
+## 3D Daily Contribution Graph
 <p align="center">
   <img src="https://raw.githubusercontent.com/GodOfZap/GodOfZap/main/profile-3d-contrib/profile-green.svg" width="100%" />
 </p>
 
 ---
 
-## 📌 Most Recently Updated Repo
+## Most Recently Updated Repo (Auto)
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=GodOfZap&theme=tokyonight" />
 </p>
 
 ---
 
-## ⭐ Most Starred Repo
+## Most Starred Repo (Auto)
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=IS&theme=tokyonight" />
 </p>
 
 ---
 
-## 🌐 Connect With Me
+## Connect With Me
 <p align="center">
   <a href="https://github.com/GodOfZap">
     <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/>
