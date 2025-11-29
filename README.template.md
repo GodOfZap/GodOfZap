@@ -63,10 +63,10 @@
   <a href="https://github.com/GodOfZap">
     <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="https://niteeshsr.vercel.app">
+  <!--<a href="https://niteeshsr.vercel.app">
     <img src="https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white"/>
   </a>
-</p>
+</p>-->
 
 ---
 
