@@ -46,7 +46,7 @@
 
 ## Most Recently Updated Repo (Auto)
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=SVM&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=GodOfZap&repo=GodOfZap&theme=tokyonight" />
 </p>
 
 ---
